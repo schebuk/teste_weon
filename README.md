@@ -1,7 +1,7 @@
 📥 Instalação
 1. Clone o repositório
 ```bash
-git clone <url-do-repositorio>
+git clone https://github.com/schebuk/teste_weon
 ```
 cd api-ecommerce
 2. Configure o ambiente
