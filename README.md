@@ -101,8 +101,9 @@ curl -X POST http://localhost:8000/api/orders \
 # Listar pedidos (com token)
 curl -X GET http://localhost:8000/api/orders \
   -H "Authorization: Bearer <seu-token>"
-🐛 Solução de Problemas
+  
 ```
+🐛 Solução de Problemas
 🔧 Erro de porta em uso:
 Altere no docker-compose.yml:
 
