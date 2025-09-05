@@ -104,26 +104,31 @@ curl -X GET http://localhost:8000/api/orders \
   
 ```
 🐛 Solução de Problemas
+
 🔧 Erro de porta em uso:
 Altere no docker-compose.yml:
 
 ```yaml
 ports:
   - "3307:3306"
+```
 🔧 Erro de permissões:
-bash
+```bash
 docker-compose exec app chmod -R 775 storage bootstrap/cache
+```
 🔧 Reconstruir containers:
-bash
+```bash
 docker-compose down
 docker-compose up -d --build
+```
 🔧 Verificar logs:
-bash
+```bash
 docker-compose logs app
 docker-compose logs nginx
 docker-compose logs db
+```
 🔧 Acessar banco de dados:
-bash
+```bash
 docker-compose exec db mysql -u laravel -ppassword ecommerce
 ```
 🎯 Comandos Úteis
